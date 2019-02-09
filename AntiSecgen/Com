@@ -1,0 +1,1 @@
+awk  '{ getline; print /bin/bash 0 0 ; for (i=0;i<100;i++) { print /bin/bash i;}}' Medium.List.Sorted.7Char > Medium.List.Sorted.7Char.2Digit 

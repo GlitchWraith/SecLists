@@ -12,6 +12,13 @@ update.php
 CHANGELOG.txt
 UPGRADE.txt
 INSTALL.pgsql.txt
+contact.txt
+credentials.txt
+Contact.txt
+contacts.txt
+credential.txt
+credential.php
+credential.xml
 MAINTAINERS.txt
 INSTALL.mysql.txt
 INSTALL.txt
@@ -25410,7 +25417,7 @@ directjob.html
 directlink.jsp
 directories.css
 directories1.html
-directory		e.g.
+directory
 directory-rss.xml
 directory2.dbm
 directory3.dbm
@@ -36622,6 +36629,7 @@ water.php
 water.swf
 waterfront.htm
 watermark.png
+waybackverify.txt
 waytoomany.html
 wblogin.php
 wc.php

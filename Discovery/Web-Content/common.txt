@@ -4,8 +4,22 @@
 .config
 .cvs
 .cvsignore
+.env
 .forward
+.git
+.git-rewrite
 .git/HEAD
+.git/config
+.git/index
+.git/logs/
+.git_release
+.gitattributes
+.gitconfig
+.gitignore
+.gitk
+.gitkeep
+.gitmodules
+.gitreview
 .history
 .hta
 .htaccess
@@ -22,6 +36,7 @@
 .subversion
 .svn
 .svn/entries
+.svnignore
 .swf
 .web
 .well-known/acme-challenge
@@ -39,6 +54,7 @@
 .well-known/csvm
 .well-known/dnt
 .well-known/dnt-policy.txt
+.well-known/dots
 .well-known/ecips
 .well-known/enterprise-transport-security
 .well-known/est
@@ -49,9 +65,11 @@
 .well-known/http-opportunistic
 .well-known/idp-proxy
 .well-known/jmap
+.well-known/jwks.json
 .well-known/keybase.txt
 .well-known/looking-glass
 .well-known/matrix
+.well-known/mercure
 .well-known/mta-sts.txt
 .well-known/mud
 .well-known/nfv-oauth-server-configuration
@@ -59,14 +77,17 @@
 .well-known/nodeinfo
 .well-known/oauth-authorization-server
 .well-known/openid-configuration
+.well-known/openid-federation
 .well-known/openorg
 .well-known/openpgpkey
 .well-known/pki-validation
 .well-known/posh
+.well-known/pvd
 .well-known/reload-config
 .well-known/repute-template
 .well-known/resourcesync
 .well-known/security.txt
+.well-known/humans.txt
 .well-known/stun-key
 .well-known/thread
 .well-known/time
@@ -128,6 +149,14 @@
 2012
 2013
 2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
 21
 22
 2257
@@ -147,6 +176,9 @@
 403
 404
 42
+4DWEBTEST
+4DSTATS
+4DHTMLSTATS
 5
 50
 500
@@ -268,6 +300,8 @@ Office
 P
 PDF
 PHP
+Pipfile
+Pipfile.lock
 PMA
 Pages
 People
@@ -301,6 +335,7 @@ ServerAdministrator
 Services
 Servlet
 Servlets
+Shibboleth.sso/Metadata
 SiteMap
 SiteScope
 SiteServer
@@ -366,6 +401,10 @@ _dummy
 _files
 _flash
 _fpclass
+_framework/blazor.boot.json
+_framework/blazor.webassembly.js
+_framework/wasm/dotnet.wasm
+_framework/_bin/WebAssembly.Bindings.dll
 _images
 _img
 _inc
@@ -460,6 +499,7 @@ act
 action
 actions
 activate
+activation
 active
 activeCollab
 activex
@@ -488,6 +528,7 @@ admin
 admin-admin
 admin-console
 admin-interface
+administrator-panel
 admin.cgi
 admin.php
 admin.pl
@@ -575,6 +616,7 @@ alert
 alerts
 alias
 aliases
+alive
 all
 all-wcprops
 alltime
@@ -597,6 +639,7 @@ analysis
 analytics
 and
 android
+android/config
 announce
 announcement
 announcements
@@ -621,6 +664,8 @@ apanel
 apc
 apexec
 api
+api/experiments
+api/experiments/configurations
 apis
 apl
 apm
@@ -708,6 +753,7 @@ authentication
 author
 authoring
 authorization
+authorize
 authorized_keys
 authors
 authuser
@@ -1020,6 +1066,7 @@ ch
 chan
 change
 change_password
+change-password
 changed
 changelog
 changepw
@@ -1039,6 +1086,7 @@ checkoutanon
 checkoutreview
 checkpoint
 checks
+check-email
 child
 children
 china
@@ -1073,6 +1121,7 @@ clickheat
 clickout
 clicks
 client
+client_configs
 clientaccesspolicy
 clientapi
 clientes
@@ -1169,6 +1218,7 @@ conference
 conferences
 config
 config.local
+config.properties
 configs
 configuration
 configure
@@ -1194,6 +1244,7 @@ contact_us
 contactinfo
 contacto
 contacts
+contacts.txt
 contactus
 contao
 contato
@@ -1206,6 +1257,7 @@ contract
 contracts
 contrib
 contribute
+contribute.json
 contributor
 control
 controller
@@ -1230,6 +1282,8 @@ corpo
 corporate
 corporation
 corrections
+cosign.key
+cosign.pub
 count
 counter
 counters
@@ -1260,6 +1314,8 @@ createaccount
 createbutton
 creation
 creator
+credentials
+credentials.txt
 credit
 creditcards
 credits
@@ -1311,6 +1367,7 @@ d
 da
 daemon
 daily
+daloradius
 dan
 dana-na
 dark
@@ -1727,6 +1784,7 @@ fdcp
 feature
 featured
 features
+federation/clients
 fedora
 feed
 feedback
@@ -1988,6 +2046,7 @@ gv_redeem
 gv_send
 gwt
 gz
+h2-console
 h
 hack
 hacker
@@ -1998,6 +2057,7 @@ handle
 handler
 handlers
 handles
+hangfire
 happen
 happening
 hard
@@ -2012,6 +2072,9 @@ header_logo
 headers
 headlines
 health
+health/live
+health/ready
+healthz
 healthcare
 hello
 helloworld
@@ -2079,6 +2142,7 @@ httpuser
 hu
 human
 humans
+humans.txt
 humor
 hyper
 i
@@ -2226,6 +2290,7 @@ invite
 invoice
 invoices
 ioncube
+ios/config
 ip
 ipc
 ipdata
@@ -2318,6 +2383,7 @@ jump
 juniper
 junk
 jvm
+jwks.json
 k
 katalog
 kb
@@ -2434,6 +2500,7 @@ listview
 live
 livechat
 livehelp
+liveness
 livesupport
 livezilla
 lo
@@ -2465,6 +2532,7 @@ login-us
 login1
 login_db
 login_sendpass
+login_check
 loginadmin
 loginflat
 logins
@@ -2616,6 +2684,7 @@ metabase
 metadata
 metaframe
 metatags
+mfa/challenge
 mgr
 michael
 microsoft
@@ -2777,6 +2846,7 @@ newstarter
 newthread
 newticket
 next
+nextcloud
 nfs
 nice
 nieuws
@@ -2787,6 +2857,7 @@ no
 no-index
 nobody
 node
+node_modules/.package-lock.json
 noindex
 nokia
 none
@@ -2800,6 +2871,7 @@ notified
 notifier
 notify
 novell
+npm-shrinkwrap.json
 nr
 ns
 nsf
@@ -2814,6 +2886,11 @@ nz
 o
 oa_servlets
 oauth
+oauth/authorize
+oauth/device/code
+oauth/revoke
+oauth/token
+oauth/token/info
 obdc
 obj
 object
@@ -2833,6 +2910,7 @@ office
 offices
 offline
 ogl
+oidc/register
 old
 old-site
 old_site
@@ -2910,6 +2988,7 @@ oversikt
 overview
 owa
 owl
+owncloud
 owners
 ows
 ows-bin
@@ -2919,6 +2998,8 @@ p7pm
 pa
 pack
 package
+package.json
+package-lock.json
 packaged
 packages
 packaging
@@ -2944,6 +3025,7 @@ panelc
 paper
 papers
 parse
+par
 part
 partenaires
 partner
@@ -3369,6 +3451,7 @@ read
 reader
 readfile
 readfolder
+readiness
 readme
 real
 realaudio
@@ -3432,6 +3515,8 @@ removals
 remove
 removed
 render
+render?url=https://www.google.com
+render/https://www.google.com
 rendered
 reorder
 rep
@@ -3450,6 +3535,7 @@ reports
 reports list
 repository
 repost
+reportserver
 reprints
 reputation
 req
@@ -3613,6 +3699,7 @@ secureform
 secureprocess
 securimage
 security
+security.txt
 seed
 select
 selectaddress
@@ -3625,6 +3712,7 @@ seminar
 seminars
 send
 send-password
+send-email
 send_order
 send_pwd
 send_to_friend
@@ -3655,6 +3743,7 @@ servicios
 servlet
 servlets
 servlets-examples
+servlet/GetProductVersion
 sess
 session
 sessionid
@@ -3893,6 +3982,7 @@ statistik
 stats
 statshistory
 status
+status/ready
 statusicon
 stock
 stoneedge
@@ -4112,6 +4202,9 @@ today
 todel
 todo
 toggle
+token
+token/introspect
+token/revoke
 tomcat
 tomcat-docs
 tool
@@ -4207,6 +4300,7 @@ ucp
 uddi
 uds
 ui
+ui_config.properties
 uk
 umbraco
 umbraco_client
@@ -4284,7 +4378,9 @@ utility_login
 utils
 v
 v1
+v1/client_configs
 v2
+v2/client_configs
 v3
 v4
 vadmind
@@ -4315,6 +4411,7 @@ ver
 ver1
 ver2
 version
+version.json
 verwaltung
 vfs
 vi
@@ -4345,6 +4442,8 @@ visit
 visitor
 visitormessage
 vista
+vite.config.js
+vite.config.ts
 vm
 vmailadmin
 void
@@ -4425,6 +4524,7 @@ weblogs
 webmail
 webmaster
 webmasters
+webpack.manifest.json
 webpages
 webplus
 webresource
@@ -4642,3 +4742,5 @@ zt
 ~user
 ~webmaster
 ~www
+dns-query?dns=q80BAAABAAAAAAAAA3d3dwdleGFtcGxlA2NvbQAAAQAB
+dns-query?name=google.com&type=A
